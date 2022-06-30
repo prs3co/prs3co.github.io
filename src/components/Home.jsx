@@ -1,6 +1,6 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi';
-import {Link, Button} from 'react-scroll'
+import {Button} from 'react-scroll'
 
 const Home = () => {
   return (

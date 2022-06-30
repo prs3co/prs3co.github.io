@@ -1,5 +1,5 @@
 {
-  "homepage": "https://prass-em17.github.io/prs-folio",
+  "homepage": "https://prs3co.github.io",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -b gh-pages",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

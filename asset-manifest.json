@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e7fd343.css",
-    "main.js": "/static/js/main.b12d05d6.js",
-    "static/media/Warehouse.PNG": "/static/media/Warehouse.04b5ae92bd339d8d22fc.PNG",
-    "static/media/bootstrap-logo.png": "/static/media/bootstrap-logo.02e16df6861464872846.png",
-    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/ideaa.png": "/static/media/ideaa.6be08a4a26ab75809137.png",
-    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
-    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
-    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
-    "static/media/jquery_logo.png": "/static/media/jquery_logo.01c01b93a64a5c10c47f.png",
-    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
-    "index.html": "/index.html",
-    "main.6e7fd343.css.map": "/static/css/main.6e7fd343.css.map",
-    "main.b12d05d6.js.map": "/static/js/main.b12d05d6.js.map"
+    "main.css": "/prs3co.github.io/static/css/main.6e7fd343.css",
+    "main.js": "/prs3co.github.io/static/js/main.481f6b4b.js",
+    "static/media/Warehouse.PNG": "/prs3co.github.io/static/media/Warehouse.04b5ae92bd339d8d22fc.PNG",
+    "static/media/bootstrap-logo.png": "/prs3co.github.io/static/media/bootstrap-logo.02e16df6861464872846.png",
+    "static/media/react.png": "/prs3co.github.io/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/ideaa.png": "/prs3co.github.io/static/media/ideaa.6be08a4a26ab75809137.png",
+    "static/media/github.png": "/prs3co.github.io/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/prs3co.github.io/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/prs3co.github.io/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/prs3co.github.io/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/jquery_logo.png": "/prs3co.github.io/static/media/jquery_logo.01c01b93a64a5c10c47f.png",
+    "static/media/javascript.png": "/prs3co.github.io/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/prs3co.github.io/index.html",
+    "main.6e7fd343.css.map": "/prs3co.github.io/static/css/main.6e7fd343.css.map",
+    "main.481f6b4b.js.map": "/prs3co.github.io/static/js/main.481f6b4b.js.map"
   },
   "entrypoints": [
     "static/css/main.6e7fd343.css",
-    "static/js/main.b12d05d6.js"
+    "static/js/main.481f6b4b.js"
   ]
 }

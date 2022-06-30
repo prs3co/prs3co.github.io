@@ -13,7 +13,7 @@ const Home = () => {
         <p className='text-[#8892b0] py-4 max-w-[700px]'>I'm an enthusiastic, self-motivated student that passionate about front-end programming. I am always willing to learn new skills, especially web programming.</p>
         <div>
           <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-            <Link to="home" smooth={true} duration={500} >
+            <Link to="project" smooth={true} duration={500} >
               View Work
             </Link>
             <span className='group-hover:rotate-90 duration-300'>

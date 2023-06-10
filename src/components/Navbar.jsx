@@ -17,20 +17,20 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className='hidden md:flex'>
-        <li>
+        <li className='hover:text-pink-600'>
           <Link to="home" smooth={true} duration={500} >
             Home
           </Link>
         </li>
         {/* <li>About</li> */}
-        <li>
+        <li className='hover:text-pink-600'>
           <Link to="skills" smooth={true} duration={500} >
             Skills
           </Link>
         </li>
-        <li>
+        <li className='hover:text-pink-600'>
           <Link to="project" smooth={true} duration={500} >
-            Project
+            Projects
           </Link>
         </li>
         {/* <li>
@@ -38,7 +38,7 @@ const Navbar = () => {
             Sertification
           </Link>
         </li> */}
-        <li>
+        <li className='hover:text-pink-600'>
           <Link to="contacts" smooth={true} duration={500} >
             Contacts
           </Link>
@@ -84,22 +84,22 @@ const Navbar = () => {
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/muhammad-eko-prasetyo/">
+            <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/muhammad-eko-prasetyo/" target='_blank' rel='noopener noreferrer'>
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/prs3co">
+            <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/prs3co" target='_blank' rel='noopener noreferrer'>
               Github <FaGithub size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#A10035]'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="https://mail.google.com/mail/u/0/?fs=1&to=muhammad.ekoprasetyo1317@gmail.com&su=SUBJECT&body=BODY&tf=cm">
+            <a className='flex justify-between items-center w-full text-gray-300' href="https://mail.google.com/mail/u/0/?fs=1&to=muhammad.ekoprasetyo1317@gmail.com&su=SUBJECT&body=BODY&tf=cm" target='_blank' rel='noopener noreferrer'>
               Email <HiOutlineMail size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="/">
+            <a className='flex justify-between items-center w-full text-gray-300' href="/" target='_blank' rel='noopener noreferrer'>
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>

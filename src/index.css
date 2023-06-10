@@ -16,9 +16,10 @@
 
 .content-div {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 250px;
+  height: 217px;
+  width: 475px;
 }
 
 .content-div:hover {

@@ -8,13 +8,13 @@ import ReactImg from '../assets/react.png';
 import Bootstrap from '../assets/bootstrap-logo.png';
 import Tailwind from '../assets/tailwind.png';
 import Github from '../assets/github.png';
-import Jquery from '../assets/jquery_logo.png';
+import Nextjs from '../assets/nextjs.png';
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-      {/* Cntainer */}
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300 pt-20'>
+      {/* Container */}
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Skills</p>
           <p className='py-4'>// These are the technologies I've worked with</p>
@@ -33,8 +33,8 @@ const Skills = () => {
             <p className='my-4'>JavaScript</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={Jquery} alt="HTML" />
-            <p className='my-4'>Jquery</p>
+            <img className='w-20 mx-auto' src={Github} alt="HTML" />
+            <p className='my-4'>Github</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto' src={Tailwind} alt="HTML" />
@@ -49,10 +49,13 @@ const Skills = () => {
             <p className='my-4'>React</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src={Github} alt="HTML" />
-            <p className='my-4'>Github</p>
+            <img className='w-20 mx-auto' src={Nextjs} alt="HTML" />
+            <p className='my-4'>Next.js</p>
           </div>
         </div>
+        <a href="https://www.linkedin.com/in/mekopr/" target='_blank' rel='noopener noreferrer'>
+          <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 mx-auto flex items-center'>See More</button>
+        </a>
       </div>
     </div>
   )

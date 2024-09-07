@@ -18,10 +18,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 217px;
-  width: 475px;
+  /* height: 217px;
+  width: 475px; */
 }
 
-.content-div:hover {
+/* .content-div:hover {
   background: linear-gradient(to right,rgba(112, 157, 255, 0.8),hsla(242, 74%, 61%, 0.8))!important;
-}
+} */

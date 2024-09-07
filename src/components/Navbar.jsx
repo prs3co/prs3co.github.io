@@ -3,11 +3,11 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { CiCloudSun, CiCloudMoon } from "react-icons/ci";
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
-import Logo from '../assets/ideaa.png';
 import {Link} from 'react-scroll'
 import { DarkModeContext } from '../context/ThemeContext';
 import { motion } from "framer-motion"
 import { GiMountains, GiLanternFlame } from "react-icons/gi";
+import { TypeAnimation } from 'react-type-animation';
 
 
 const menuList = [
@@ -31,18 +31,70 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-whitesmoke-500 dark:bg-darkblue-500 text-gray-300'>
-      <div>
+    <div className='fixed z-50 w-full h-[80px] flex justify-between items-center px-4 transition-colors duration-200 bg-whitesoft-500 dark:bg-darkblue-500 text-gray-300'>
+      <motion.div className='flex gap-2'
+        drag
+        dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
+        dragConstraints={{ left: 1, right: 1260, top: 1, bottom: 520 }}
+        dragElastic={0.2}
+
+        initial={{ rotate: 0, scale: 1 }}
+        animate={{ rotate: isDarkMode ? 360 : 0 }}
+      >
         {
-          isDarkMode ? <GiLanternFlame className='w-14 h-14' /> : <GiMountains className='w-14 h-14 text-mountgreen-500' />
+          isDarkMode ? (
+            <div>
+              <svg width="0" height="0">
+                <linearGradient id="lantern-gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                  <stop stopColor="#db2777" offset="40%" />
+                  <stop stopColor="#ccd6f6" offset="100%" />
+                </linearGradient>
+              </svg>
+              <GiLanternFlame className='w-14 h-14'  style={{fill: "url(#lantern-gradient)"}} />
+            </div>
+          ) : (
+            <motion.div
+              // whileHover={{
+              //   rotate: 360
+              // }}
+              // transition={{ repeat: 1, repeatType: 'reverse', duration: 2 }}
+            >
+              <svg width="0" height="0">
+                <linearGradient id="mount-gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                  <stop stopColor="#16C79A" offset="40%" />
+                  <stop stopColor="#11698E" offset="100%" />
+                </linearGradient>
+              </svg>
+              <GiMountains className='w-14 h-14' style={{fill: "url(#mount-gradient)"}} />
+            </motion.div>
+          )
         }
-      </div>
+        <div className='text-mateblue-500 bg-whitesoft-300 shadow-md rounded-ss-none rounded-full p-4 w-fit h-fit'>
+          <TypeAnimation
+            sequence={[
+              '^_^',
+              10000,
+              "I bet you can't drag me!",
+              10000,
+              'Slide me to unlock something cool!',
+              10000,
+              'Designed to pop, not drag around!',
+              10000,
+              'Whoa! I’m a logo, not a toy!',
+              10000,
+            ]}
+            wrapper="span"
+            speed={60}
+            repeat={Infinity}
+          />
+        </div>
+      </motion.div>
 
       {/* menu */}
       <ul className='hidden md:flex'>
         {
           menuList.map((menu) => (
-          <li key={menu.path} className='text-mountgreen-500 hover:text-whitesoft-500 hover:bg-mountgreen-500 dark:hover:text-pink-800 flex items-center justify-center rounded-full'>
+          <li key={menu.path} className='text-mountgreen-500 hover:text-whitesoft-500 hover:bg-mountgreen-500 dark:text-whitesoft-400 dark:hover:text-whitesoft-400 dark:hover:bg-pink-600 flex items-center justify-center rounded-full'>
             <Link to={menu.path} smooth={true} duration={500} >
               {menu.name}
             </Link>
@@ -53,7 +105,7 @@ const Navbar = () => {
           {/* darkmode toggler */}
           <motion.div
             onClick={toggleDarkMode}
-            className='w-10 h-10 flex justify-center items-center rounded-full bg-mountgreen-500 hover:bg-darkblue'
+            className='w-10 h-10 flex justify-center items-center rounded-full bg-mountgreen-500 dark:bg-pink-600'
             initial={{ rotate: 0, scale: 1 }}
             animate={{ rotate: isDarkMode ? 360 : 0 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
@@ -61,7 +113,7 @@ const Navbar = () => {
             {!isDarkMode ? (
               <CiCloudSun className='w-8 h-8 text-whitesoft-500' />
             ) : (
-              <CiCloudMoon className='w-8 h-8' />
+              <CiCloudMoon className='w-8 h-8 text-whitesoft-400' />
             )}
           </motion.div>
         </li>

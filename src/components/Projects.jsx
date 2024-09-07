@@ -6,7 +6,7 @@ import Rekammedis from '../assets/rekammedis.png'
 
 const Projects = () => {
   return (
-    <div name='project' className='w-full h-full text-gray-300 bg-[#0a192f] pt-20'>
+    <div name='project' className='w-full h-full text-gray-300 pt-20'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Projects</p>

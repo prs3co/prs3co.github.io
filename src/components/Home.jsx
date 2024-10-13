@@ -4,12 +4,12 @@ import {Link} from 'react-scroll'
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen transition-colors duration-300'>
+    <div name='home' className='w-full h-max sm:h-screen transition-colors duration-300'>
 
       {/* container */}
-      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+      <div className='max-w-[1000px] mx-auto px-8 pt-24 sm:pt-0 flex flex-col justify-center h-full'>
         <p className='text-mountgreen-500 dark:text-pink-600'>Hi, my name is</p>
-        <h1 className='text-4xl sm:text-7xl font-bold text-applegreen-500 text-mateblue-500 dark:text-whitesoft-400'>Pras</h1>
+        <h1 className='text-7xl font-bold text-applegreen-500 text-mateblue-500 dark:text-whitesoft-400'>Pras</h1>
         <p className='text-mateblue-600 dark:text-darkblue-300 py-4 max-w-[700px]'>an Information Systems student at Mulawarman University with a passion for web programming.
         I’m a motivated learner, eager to expand my skills in web and software development. Over the past two years, I’ve gained experience in fundamental programming and web technologies, including JavaScript frameworks like React and Next.js. I’m also familiar with basic UI/UX design, having worked with tools like Figma. I’m always looking for new opportunities to enhance my knowledge and grow in my field.</p>
         <div className="max-w-fit" >

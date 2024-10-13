@@ -31,7 +31,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed z-50 w-full h-[80px] flex justify-between items-center px-4 transition-colors duration-200 bg-whitesoft-500 dark:bg-darkblue-500 text-gray-300'>
+    <div className='fixed z-50 w-full h-[80px] flex justify-between items-center px-4 transition-colors duration-200 bg-whitesoft-5000 bg-transparent backdrop-blur-sm dark:bg-darkblue-500 text-gray-300'>
       <motion.div className='flex gap-2'
         drag
         dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
@@ -69,7 +69,7 @@ const Navbar = () => {
             </motion.div>
           )
         }
-        <div className='text-mateblue-500 bg-whitesoft-300 shadow-md rounded-ss-none rounded-full p-4 w-fit h-fit'>
+        {/* <div className='text-mateblue-500 bg-whitesoft-300 shadow-md rounded-ss-none rounded-full p-4 w-fit h-fit'>
           <TypeAnimation
             sequence={[
               '^_^',
@@ -87,7 +87,7 @@ const Navbar = () => {
             speed={60}
             repeat={Infinity}
           />
-        </div>
+        </div> */}
       </motion.div>
 
       {/* menu */}
@@ -155,24 +155,24 @@ const Navbar = () => {
       </ul>
 
       {/* Social Icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className='hidden lg:flex fixed flex-col top-[239%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className='w-[160px] rounded-md pl-6 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-600'>
             <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/muhammad-eko-prasetyo/" target='_blank' rel='noopener noreferrer'>
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[160px] rounded-md pl-6 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#333333]'>
             <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/prs3co" target='_blank' rel='noopener noreferrer'>
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#A10035]'>
+          <li className='w-[160px] rounded-md pl-6 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#A10035]'>
             <a className='flex justify-between items-center w-full text-gray-300' href="https://mail.google.com/mail/u/0/?fs=1&to=muhammad.ekoprasetyo1317@gmail.com&su=SUBJECT&body=BODY&tf=cm" target='_blank' rel='noopener noreferrer'>
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+          <li className='w-[160px] rounded-md pl-6 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#565f69]'>
             <a className='flex justify-between items-center w-full text-gray-300' href="/" target='_blank' rel='noopener noreferrer'>
               Resume <BsFillPersonLinesFill size={30} />
             </a>

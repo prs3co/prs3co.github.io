@@ -24,12 +24,11 @@ const Contacts = () => {
         <motion.input
           animate={{
             background: focusedInput === 1 ? "linear-gradient(90deg,  #ccd6f6 35%,  #8f96ac 100%)" : "linear-gradient(90deg, #ccd6f6 0%, #ccd6f6 0%)",
-            color: focusedInput === 1 ? "#F8F1F1" : "#11698E"
           }}
           onFocus={() => handleFocus(1)}
           onBlur={handleBlur}
           transition={{ type: 'spring', stiffness: 200 }}
-          className='p-2 bg-[#ccd6f6] rounded-md shadow-md focus:outline-none placeholder:text-mateblue-600 focus:placeholder:text-whitesoft-500'
+          className='p-2 bg-[#ccd6f6] rounded-md shadow-md focus:outline-none placeholder:text-mateblue-600'
           type="text"
           placeholder='Name'
           name='name'
@@ -51,12 +50,11 @@ const Contacts = () => {
         <motion.textarea
           animate={{
             background: focusedInput === 3 ? "linear-gradient(90deg,  #ccd6f6 35%,  #8f96ac 100%)" : "linear-gradient(90deg, #ccd6f6 0%, #ccd6f6 0%)",
-            color: focusedInput === 3 ? "#F8F1F1" : "#11698E"
           }}
           onFocus={() => handleFocus(3)}
           onBlur={handleBlur}
           transition={{ type: 'spring', stiffness: 200 }}
-          className='p-2 bg-[#ccd6f6] rounded-md shadow-md focus:outline-none placeholder:text-mateblue-600 focus:placeholder:text-whitesoft-500'
+          className='p-2 bg-[#ccd6f6] rounded-md shadow-md focus:outline-none placeholder:text-mateblue-600'
           name="message"
           id=""
           cols="30"

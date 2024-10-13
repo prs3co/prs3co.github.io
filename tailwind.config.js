@@ -15,10 +15,11 @@ module.exports = {
           600: '#09172a',
         },
         whitesoft : {
+          200: '#F1F5F9',
           300: '#dfd9d9',
           400: '#ccd6f6',
           500: '#F8F1F1',
-          600: '#ccd6f6'
+          600: '#ccd6f6',
         },
         mountgreen : {
           400: '#8be3cd',

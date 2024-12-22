@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: "selector",
-  safelist: ["dark"],
+  safelist: [
+    "dark",
+    'bg-rose-900',
+    'bg-blue-900',
+    'bg-teal-900',
+    'bg-amber-900',
+  ],
   theme: {
     extend: {
       colors: {

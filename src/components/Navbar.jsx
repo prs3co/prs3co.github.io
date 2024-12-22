@@ -13,15 +13,15 @@ import { TypeAnimation } from 'react-type-animation';
 const menuList = [
   {
     name: 'About',
-    path: '/',
+    path: 'home',
   },
   {
     name: 'Project',
-    path: '/',
+    path: 'project',
   },
   {
     name: 'Contact',
-    path: '/',
+    path: 'contacts',
   },
 ]
 

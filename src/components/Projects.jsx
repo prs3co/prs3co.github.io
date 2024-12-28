@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState } from 'react'
-import CoverTes from '../assets/cover-tes.png'
-import CoverImg from '../assets/cover-project.png'
 import EwasonsImg from '../assets/cover-ewasons.png'
 import ConnectImg from '../assets/cover-connect.png'
+import ReceiptOCRImg from '../assets/cover-receiptocr.png'
 import { motion } from "framer-motion"
 import { div } from 'framer-motion/client'
 import { GiMountains } from 'react-icons/gi'
@@ -44,11 +43,11 @@ const projectsList = [
     ]
   },
   {
-    name: 'Receip OCR',
+    name: 'Receipt OCR',
     desc: 'Connect By BCA',
-    img: CoverImg,
+    img: ReceiptOCRImg,
     repo: '',
-    demo: '',
+    demo: 'https://receipt-ocr-murex.vercel.app/scan',
     tags: [
       {
         name: 'personal-project',
@@ -86,8 +85,8 @@ const Projects = () => {
     <div name='project' className='w-full h-full text-mateblue-500 dark:text-gray-300 pt-20'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
         <div>
-          <p className='text-4xl font-bold inline border-b-4 border-mountgreen-500 dark:border-pink-600'>Featured Projects</p>
-          <p className='py-4'>{'\u002F\u002F'} Check out some of my recent projects</p>
+          <p className='text-4xl font-bold inline border-b-4 border-mountgreen-500 dark:border-pink-600'>Projects</p>
+          <p className='py-4'>{'\u002F\u002F'} Check out what I’ve been up to lately</p>
           <div className='w-full h-full grid grid-cols-1 gap-4 text-center py-8 overflow-visible'>
             {
               projectsList.map((project, index) => (
@@ -155,7 +154,7 @@ const Projects = () => {
                 //     </a>
                 //   </div>
                 // </motion.div>
-                <div className='shadow-md rounded-md dark:bg-darkblue-400 flex-col sm:flex-row gap-4 sm:h-48 w-full p-2 overflow-hidden relative flex items-center justify-start px-6 py-3 font-medium transition-all'>
+                <div key={project.name} className='shadow-md rounded-md dark:bg-darkblue-400 flex-col sm:flex-row gap-4 sm:h-48 w-full p-2 overflow-hidden relative flex items-center justify-start px-6 py-3 font-medium transition-all'>
                   <div className='image__container w-fit h-full overflow-clip rounded-md hover:scale-125 transform transition duration-500'>
                     <img src={project.img} alt="" className='w-full max-w-[100%] min-w-[200px] h-auto object-top object-contain' />
                   </div>
@@ -172,14 +171,13 @@ const Projects = () => {
                     </div>
                     <div className='w-half h-full flex items-end justify-center'>
                     <a href={`${project.demo}`} target='_blank' rel='noopener noreferrer'>
-                      <button href="#_" class="text-mateblue-600 rounded-md dark:text-white border-2 border-mateblue-600 dark:border-white dark:hover:bg-pink-600 dark:hover:border-pink-600 px-6 py-3 mx-auto relative inline-flex items-center justify-center p-4 overflow-hidden font-medium transition duration-300 ease-out   shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-mountgreen-500 group-hover:translate-x-0 ease">
+                      <button href="#_" class="text-mateblue-600 rounded-md dark:text-white border-2 border-mateblue-600 dark:border-white dark:hover:border-white px-6 py-3 mx-auto relative inline-flex items-center justify-center p-4 overflow-hidden font-medium transition duration-300 ease-out   shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-mountgreen-500 dark:bg-pink-500 group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-mateblue-600 transition-all duration-300 transform group-hover:translate-x-full ease">Demo</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-mateblue-500 dark:text-white transition-all duration-300 transform group-hover:translate-x-full ease">Demo</span>
                         <span class="relative invisible">Demo</span>
                       </button>
-                      {/* <button className='text-mateblue-600 rounded-md dark:text-white border-2 border-mateblue-600 dark:border-white hover:border-mountgreen-500 hover:bg-mountgreen-500 dark:hover:bg-pink-600 dark:hover:border-pink-600 px-4 py-3 mx-auto flex items-center transition-colors duration-200 ease-in'>Demo</button> */}
                     </a>
                     </div>
                   </div>

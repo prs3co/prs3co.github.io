@@ -18,7 +18,8 @@ const Contacts = () => {
       <form action="https://getform.io/f/0817fe02-79bf-4ddc-8360-bb4c19242af5" method='POST' className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-3'>
           <p className='text-4xl font-bold inline border-b-4 border-mountgreen-500 text-mateblue-500 dark:border-pink-600 dark:text-gray-300'>Contacts</p>
-          <p className='text-mateblue-500 dark:text-gray-300 py-4'>{'\u002F\u002F'} Submit the form below or send me an email</p>
+          <p className='text-mateblue-500 dark:text-gray-300 py-4'>{'\u002F\u002F'} Feel free to fill out the form or drop me an email.
+          </p>
         </div>
 
         <motion.input

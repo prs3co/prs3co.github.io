@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0584d88f.css",
+    "main.js": "/static/js/main.f6f72d00.js",
+    "static/media/cover-connect.png": "/static/media/cover-connect.a7870c40e05415362957.png",
+    "static/media/sky.png": "/static/media/sky.1ffe6cc11c8cc8ccad84.png",
+    "static/media/cover-ewasons-pixel.png": "/static/media/cover-ewasons-pixel.5b8cc8bba9b90f2697e1.png",
+    "static/media/cover-receiptocr.png": "/static/media/cover-receiptocr.129f2e627d8daabb1e4b.png",
+    "static/media/knight-anima.webp": "/static/media/knight-anima.bbe3f9c16d532feb49d5.webp",
+    "static/media/ground_3-no grad.png": "/static/media/ground_3-no grad.d74bb133b672be3dfd1f.png",
+    "static/media/ground_2.png": "/static/media/ground_2.97dec1f328fe53950d69.png",
+    "static/media/ground_1.png": "/static/media/ground_1.42ac1d818ef58dace9b6.png",
+    "static/media/clouds_1.png": "/static/media/clouds_1.891786c501a632135301.png",
+    "static/media/rocks.png": "/static/media/rocks.18c76a22e4dd5240fba4.png",
+    "static/media/clouds_2.png": "/static/media/clouds_2.2e8935c32f7a59d59f1c.png",
+    "index.html": "/index.html",
+    "main.0584d88f.css.map": "/static/css/main.0584d88f.css.map",
+    "main.f6f72d00.js.map": "/static/js/main.f6f72d00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0584d88f.css",
+    "static/js/main.f6f72d00.js"
+  ]
+}
